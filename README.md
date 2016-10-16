@@ -1,6 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+<!-- This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
@@ -21,4 +21,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* ... -->
+
+Hallo! I am Justin and I am professional web developer! 
+
+The name of this test app is: nameofapp
+
+It is designed to be for testing purposes only!
