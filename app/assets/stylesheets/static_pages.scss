@@ -1,3 +1,68 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-headers: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+$primary-color: black;
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: olive;
+}
+
+h1 {
+	font: $font-headers;
+	color: $primary-color;
+	text-align: center;
+}
+
+.nav {
+	text-transform: uppercase;
+	color: white;
+}
+
+.nav li {
+	padding: 15px;
+	font-size: 18;
+	line-height: 20px;
+}
+
+.projectName a {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+
+.welcome,
+.test-header,
+.about,
+.contact,
+.date-time {
+	margin: 2%;
+	padding-top: 5%;
+}
+
+.date-time {
+	text-align: center;
+	font-weight: bold;
+	color: purple;
+}
+
+#contact,
+.about-test {
+	text-align: center;
+}
+.site-footer {
+	margin: 1%;
+	padding: 1%;
+	height: 150px;
+	text-align: center;
+}
