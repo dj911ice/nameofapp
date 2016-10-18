@@ -41,6 +41,39 @@ h1 {
 	text-decoration: none;
 }
 
+.Site {
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.tag-line {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.test-header {
+	text-align: center;
+	color: purple;
+	padding-bottom: 1%;
+}
+
+.img-responsive {
+	margin: auto;
+	border-radius: 20%;
+}
+
+.about-test {
+	text-size: 1.5em;
+	text-transform: uppercase;
+	color: purple;
+
+}
+
 .welcome,
 .test-header,
 .about,
@@ -50,12 +83,6 @@ h1 {
 	padding-top: 5%;
 }
 
-.date-time {
-	text-align: center;
-	font-weight: bold;
-	color: purple;
-}
-
 #contact,
 .about-test {
 	text-align: center;
@@ -63,6 +90,7 @@ h1 {
 .site-footer {
 	margin: 1%;
 	padding: 1%;
-	height: 150px;
+	height: 100px;
 	text-align: center;
+	font-size: 1.15em;
 }
