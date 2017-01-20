@@ -22,14 +22,14 @@
             <span class="icon-bar"></span>
           </button>
         <div class="projectName navbar-brand" >
-          <a href="#">Test App</a>
+        <%= link_to('Welcome', static_pages_index_path) %>
         </div> <!-- end projectName -->
       </div> <!-- end navbar header -->
         <div class="navbar-collapse collapse"> 
   		    <ul class="nav navbar-nav navbar-right">
-  			   <li>Home</li>
-  			   <li>About</li>
-  			   <li>Contact</li>
+           <li><%= link_to('Products', products_path) %></li>
+  			   <li><%= link_to('About', static_pages_about_path) %></li>
+  			   <li><%= link_to('Contacts', static_pages_contact_path) %></li>
   		    </ul>
         </div> <!-- end navbar-collapse --> 
       </div> <!--end nav container-fluid -->  

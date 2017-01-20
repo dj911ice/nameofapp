@@ -24,15 +24,12 @@ h1 {
 	text-align: center;
 }
 
-.nav {
-	text-transform: uppercase;
-	color: white;
-}
-
 .nav li {
 	padding: 15px;
 	font-size: 18;
 	line-height: 20px;
+	text-transform: uppercase;
+	color: white
 }
 
 .projectName a {
@@ -71,13 +68,14 @@ h1 {
 	text-size: 1.5em;
 	text-transform: uppercase;
 	color: purple;
-
 }
 
 .welcome,
 .test-header,
 .about,
 .contact,
+.products,
+.featured,
 .date-time {
 	margin: 2%;
 	padding-top: 5%;
