@@ -59,13 +59,14 @@ h1 {
 	padding-bottom: 1%;
 }
 
-.img-responsive {
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail>a>img,
+.thumbnail>img {
 	display: block;
-	margin: auto;
+	max-width: 50%;
 	height: auto;
-	width: auto;
-	border-radius: 2%;
-
 }
 
 .about-test {
