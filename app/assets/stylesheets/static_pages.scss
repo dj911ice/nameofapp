@@ -87,6 +87,15 @@ h1 {
 	padding-top: 5%;
 }
 
+div>.item {
+	display: inline-block;
+	text-align: center;
+}
+
+.carousel-inner>.item>img {
+	margin: 0 auto;
+}
+
 #contact,
 .about-test {
 	text-align: center;

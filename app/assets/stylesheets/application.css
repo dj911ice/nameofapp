@@ -13,11 +13,3 @@
  *= require_tree .
  *= require_self
  */
-div>.item {
-	display: inline-block;
-	text-align: center;
-}
-
-.carousel-inner>.item>img {
-	margin: 0 auto;
-}
