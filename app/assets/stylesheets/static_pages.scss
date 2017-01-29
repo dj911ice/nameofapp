@@ -59,6 +59,17 @@ h1 {
 	padding-bottom: 1%;
 }
 
+.showcase,
+.products {
+	text-align: center;	
+}
+
+#showcase,
+#products {
+	color: green;
+	text-decoration: none;
+}
+
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img,
 .img-responsive,
@@ -67,6 +78,11 @@ h1 {
 	display: block;
 	max-width: 25%;
 	height: auto;
+}
+
+.img-responsive {
+	display: block;
+  margin: auto;
 }
 
 .about-test {
@@ -82,7 +98,8 @@ h1 {
 .products,
 .featured,
 .date-time,
-.new {
+.new,
+.edit {
 	margin: 2%;
 	padding-top: 5%;
 }
