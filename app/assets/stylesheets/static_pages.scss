@@ -132,6 +132,16 @@ div>.item {
 
 .field,
 .actions {
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+		left: 37%;
+}
+
+.panel,
+.panel-body {
+	background-color: #b0841c;
+}
+#thanks {
+	text-align: center;
+	font-size: 1.35em;
+	color: purple;
 }
