@@ -130,12 +130,6 @@ div>.item {
 	font-size: 1.15em;
 }
 
-.field,
-.actions {
-	position: relative;
-		left: 37%;
-}
-
 .panel,
 .panel-body {
 	background-color: #b0841c;
@@ -144,4 +138,13 @@ div>.item {
 	text-align: center;
 	font-size: 1.35em;
 	color: purple;
+}
+.row {
+	position: relative;
+		left: 34.7%;
+}
+
+.submit {
+	position: relative;
+		left: 47.7%;
 }

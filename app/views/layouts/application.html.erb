@@ -23,11 +23,11 @@
           </button>
         <div class=projectName>
         </div>        
-        <div class="form-group">
-          <%= form_tag("/products", method: "get", class: "navbar-form navbar-left") do %>
-            <%= label_tag(:q, "Search for:", class: 'search_label') %>
-            <%= text_field_tag(:q, nil, class: 'form-control') %>
-            <%= submit_tag("Check Products", data: {disable_with: "searching products..."}, class: 'btn btn-default') %>
+        <div class="navbar-form">
+          <%= form_tag("/products", method: "get", class: "form-group form-inline") do %>
+            <%= label_tag(:q, 'Search for:', class: 'search_label') %>
+            <%= text_field_tag(:q, nil, placeholder: 'Products') %>
+            <%= submit_tag("Check Products", data: {disable_with: "searching database..."}) %>
           <% end %>
         </div> <!-- end form-group -->
       </div> <!-- end navbar header --> 
