@@ -31,17 +31,25 @@
           <% end %>
         </div> <!-- end form-group -->
       </div> <!-- end navbar header --> 
-        <div class="navbar-collapse collapse"> 
+        <div class="navbar-collapse collapse"> q
   		    <ul class="nav navbar-nav navbar-right">
            <li><%= link_to('Home', root_path) %></li> 
            <li><%= link_to('Products', products_path) %></li>
   			   <li><%= link_to('About', static_pages_about_path) %></li>
   			   <li><%= link_to('Contacts', static_pages_contact_path) %></li>
+           <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+            </li>
   		    </ul>
         </div> <!-- end navbar-collapse --> 
       </div> <!--end nav container-fluid -->  
     </nav> <!-- end navbar -->
     <main class="Site-content">
+    <%= flash[:notice] %>
     <%= yield %>
     </main>
     <footer class="site-footer">
