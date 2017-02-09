@@ -1,31 +1,48 @@
-<p id="notice">
+<br><br>
+<div class="product-show">
+<h1><%= @product.name %></h1>
+<br><br>
+  <%= image_tag(@product.image_url, class: "img-responsive") %>
+  
+  <p class="description">
+  <span class="price price-show img-responsive"><%= @product.price %> CHF</span>
+  <br>
+  <%= @product.description %></p>
+</div>
+<div>
+<%= @product.highest_rating_comment %>
+</div>
+
+
+<!-- <p id="notice">
 <%= notice %>  
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @product.name %>
+  <#%= @product.name %>
 </p>
 
 <p>
   <strong>Description:</strong>
-  <%= @product.description %>
+  <#%= @product.description %>
 </p>
 
 <p>
   <strong>Image url:</strong>
-  <%= @product.image_url %>
+  <#%= @product.image_url %>
 </p>
 
 <p>
-	<strong>Colour:</strong>
-	<%= @product.colour %>
+  <strong>Colour:</strong>
+  <#%= @product.colour %>
 </p>
 
 <p>
-	<strong>Price:</strong>
-	<%= @product.price %>
+  <strong>Price:</strong>
+  <#%= @product.price %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+<#%= link_to 'Edit', edit_product_path(@product) %> |
+<#%= link_to 'Back', products_path %> -->
