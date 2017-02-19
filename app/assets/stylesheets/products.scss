@@ -1,26 +1,31 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.product-show {
-	
-}
+
 .img-responsive {
 	display: block;
 	margin: auto;
+	
+}
+.img-show {
+	display: block;	
+	height: 75%;
+	max-width: 80%;
+
 }
 
 .price {
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 }
 
 .price-show{
-	text-align: right;
+	text-align: left;
 	font-weight: bold;
 }
 
 .description {
-	text-align: center;
+	text-align: left;
 }
 
 
