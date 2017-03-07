@@ -23,10 +23,13 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-4 col-md-6">	
-
+		<div class="col-sm-4 col-md-6">
+			
 		</div>
 		<div class="col-sm-4 col-md-6">
+			<div class="apple_pagination">	
+				<%= will_paginate @comments %>
+			</div>
 		</div>
 	</div>	
 	<%= render partial: 'products/comments' %>
