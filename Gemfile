@@ -59,3 +59,5 @@ gem 'devise'
 gem 'cancancan'
 # gem will_paginate 3.1.1: Pagination
 gem 'will_paginate', '~> 3.1.1'
+# Rails Controller Testing
+gem 'rails-controller-testing'

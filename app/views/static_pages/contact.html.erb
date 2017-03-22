@@ -7,25 +7,29 @@
 </p>
 
 <%= flash[:notice] %>
-<%= form_tag("/static_pages/thank_you") do %>
+<%= form_tag("/static_pages/thank_you", class: "form-horizontal") do %>
+
 <div class="row">
+	<div class="col-md-4"></div>
 	<div class="col-md-4">
-		<div class="form-group form-horizontal">
-			<%= label_tag :name %>
-			<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>						
+		<div class="form-group">
+			<%= label_tag :name, "Name *" %>
+			<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name", required: "required", title: "Name required" %>						
 		</div> 
-		<div class="form-group form-horizontal">
-			<%= label_tag :email, "Email Address" %>
-			<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+		<div class="form-group">
+			<%= label_tag :email, "Email Address *"  %>
+			<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email", required: "required", title: "Email required" %>
 		</div>
-		<div class="form-group form-horizontal">
-			<%= label_tag :message %>
-			<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+		<div class="form-group">
+			<%= label_tag :message, "Message *" %>
+			<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", required: "required", title: "Message required" %>
 		</div>
+		<%= submit_tag "submit", class: "submit form-control", data: {confirm: "You are submitting a contact form! By confirming you agree to be contacted! Are you sure about this action?"} %>
+		<% end %>
 	</div>
+	<div class="col-md-4"></div>
 </div>
-<%= submit_tag "submit", class: "submit", data: {confirm: "You are submitting a contact form! By confirming you agree to be contacted! Are you sure about this action?"} %>
-<% end %>
+
 
 
 

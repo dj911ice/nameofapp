@@ -10,17 +10,23 @@
       </ul>
     </div>
   <% end %>
-  <div class="field">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-  </div>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="field form-group">
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-  </div>
-
-  <div class="actions">
+    <div class="field form-group">
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: "form-control" %>
+    </div>
     <%= f.submit %>
+    <br><br>
+    <%= link_to 'Show', @user %> |
+    <%= link_to 'Back', users_path %>
   </div>
+  <div class="col-md-4"></div>
+</div>
 <% end %>

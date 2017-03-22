@@ -23,15 +23,16 @@
           </button>
         <div class=projectName>
         </div>        
-        <div class="navbar-form">
-          <%= form_tag("/products", method: "get", class: "form-group form-inline") do %>
-            <%= label_tag(:q, 'Search for:', class: 'search_label') %>
-            <%= text_field_tag(:q, nil, placeholder: 'Products') %>
-            <%= submit_tag("Check Products", data: {disable_with: "searching database..."}) %>
-          <% end %>
-        </div> <!-- end form-group -->
-      </div> <!-- end navbar header --> 
-        <div class="navbar-collapse collapse"> q
+        <div class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <%= form_tag("/products", method: "get") do %>
+              <%= label_tag(:q, 'Search for:', class: 'search_label') %>
+              <%= text_field_tag(:q, nil, placeholder: 'Products',class: 'form-control') %>
+              <%= submit_tag("Check Products", data: {disable_with: "searching database..."}, class: 'form-control') %>
+            <% end %>
+          </div> <!-- end form-group -->
+        </div> <!-- end navbar header --> 
+        <div class="navbar-collapse collapse">
   		    <ul class="nav navbar-nav navbar-right">
            <li><%= link_to('Home', root_path) %></li> 
            <li><%= link_to('Products', products_path) %></li>
