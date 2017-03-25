@@ -12,6 +12,7 @@ $primary-color: black;
 html,
 body {
 	height: 100%;
+	padding-bottom: 70px;
 }
 
 body {
@@ -22,11 +23,6 @@ h1 {
 	font: $font-headers;
 	color: $primary-color;
 	text-align: center;
-}
-
-.search_label {
-	text-transform: uppercase;
-	color: olive;
 }
 
 .projectName {

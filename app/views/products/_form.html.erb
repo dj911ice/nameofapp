@@ -37,7 +37,9 @@
     </div>
     <div class="actions">
       <%= f.submit %><br><br>
-      <%= link_to 'Back', products_path %>
+      <%= link_to 'Show', @product %> |
+      <%= link_to 'Back', products_path %> |
+      <%= link_to 'Edit', edit_product_path(product) %>
     </div>
   </div>
   <div class="col-md-4"></div>

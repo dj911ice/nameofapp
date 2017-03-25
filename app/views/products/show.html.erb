@@ -6,6 +6,10 @@
 		<div class="col-sm-4 col-md-6">
 			<div class="product-show">
 			<%= image_tag(@product.image_url, class: "img-show") %>
+			<% if signed_in? && current_user.admin? %>
+				<%= link_to 'Edit', edit_product_path(@product) %>
+			<% else %>
+			<% end %>
 			<p><%= render partial: 'products/new_comment' %></p>
 			</div>
 		</div>

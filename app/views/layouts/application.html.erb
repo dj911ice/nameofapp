@@ -23,21 +23,21 @@
           </button>
         <div class=projectName>
         </div>        
-        <div class="navbar-form navbar-left" role="search">
-          <div class="form-group">
+        <div class="navbar-form navbar-left search" role="search">
+          <div class="form-group-sm">
             <%= form_tag("/products", method: "get") do %>
               <%= label_tag(:q, 'Search for:', class: 'search_label') %>
-              <%= text_field_tag(:q, nil, placeholder: 'Products',class: 'form-control') %>
-              <%= submit_tag("Check Products", data: {disable_with: "searching database..."}, class: 'form-control') %>
+              <%= text_field_tag(:q, nil, placeholder: 'Products', class: 'form-control') %>
+              <%= submit_tag("Check Products", data: {disable_with: "Working..."}, class: 'form-control') %>
             <% end %>
           </div> <!-- end form-group -->
         </div> <!-- end navbar header --> 
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse navbar-right">
   		    <ul class="nav navbar-nav navbar-right">
            <li><%= link_to('Home', root_path) %></li> 
            <li><%= link_to('Products', products_path) %></li>
   			   <li><%= link_to('About', static_pages_about_path) %></li>
-  			   <li><%= link_to('Contacts', static_pages_contact_path) %></li>
+  			   <li><%= link_to('Contact Us', static_pages_contact_path) %></li>
            <li>
             <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>

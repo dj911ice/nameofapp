@@ -13,10 +13,25 @@
  *= require_tree .
  *= require_self
  */
- 
+.navbar {
+	min-height: 34px;
+	padding-bottom: 2px;
+}
+
 .nav li {
-	font-size: 14;
-	line-height: 10px;
+	font-size: 14px;
+	line-height: 8px;
 	text-transform: uppercase;
 	color: white;
+}
+
+.search {
+}
+
+.search_label {
+	line-height: 7px;
+	text-transform: uppercase;
+	color: olive;
+	display: inline-block;
+	font-size: 1.1em;
 }
