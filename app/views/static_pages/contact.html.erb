@@ -24,7 +24,9 @@
 			<%= label_tag :message, "Message *" %>
 			<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message", required: "required", title: "Message required" %>
 		</div>
-		<%= submit_tag "submit", class: "submit form-control", data: {confirm: "You are submitting a contact form! By confirming you agree to be contacted! Are you sure about this action?"} %>
+		<div class="actions">
+		<%= submit_tag "submit", class: "submit btn btn-default", data: {confirm: "You are submitting a contact form! By confirming you agree to be contacted! Click ok to confirm!"} %>
+		</div>
 		<% end %>
 	</div>
 	<div class="col-md-4"></div>

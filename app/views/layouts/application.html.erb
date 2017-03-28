@@ -28,7 +28,7 @@
             <%= form_tag("/products", method: "get") do %>
               <%= label_tag(:q, 'Search for:', class: 'search_label') %>
               <%= text_field_tag(:q, nil, placeholder: 'Products', class: 'form-control') %>
-              <%= submit_tag("Check Products", data: {disable_with: "Working..."}, class: 'form-control') %>
+              <%= submit_tag("Check Products", data: {disable_with: "Working..."}, class: 'btn btn-default btn-sm') %>
             <% end %>
           </div> <!-- end form-group -->
         </div> <!-- end navbar header --> 

@@ -14,7 +14,7 @@
  *= require_self
  */
 .navbar {
-	min-height: 34px;
+	min-height: 30px;
 	padding-bottom: 2px;
 }
 
@@ -34,4 +34,8 @@
 	color: olive;
 	display: inline-block;
 	font-size: 1.1em;
+}
+
+.actions {
+	text-align: center;
 }
