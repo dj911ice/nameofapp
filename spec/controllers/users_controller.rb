@@ -1,8 +1,12 @@
 require "rails_helper"
+require 'support/factory_girl'
 
 describe UsersController, type controller do
-	let(:user) {User.create!(email: 'anna@domain.com', password: 'test1234')}
-	let(:user) {User.create!(email: 'sammy@domain.com', password: 'test5678')}
+	# @user = User.create!(email: 'peter@example.com", password: "1234567890')
+	# let(:user) {User.create!(email: 'anna@domain.com', password: 'test1234')}
+	@user1 = FactoryGirl.create(:user)
+	# let(:user) {User.create!(email: 'sammy@domain.com', password: 'test5678')}
+	@user2 = FactoryGirl.create(:user)
 	before do
 		sign_in user
 	end
