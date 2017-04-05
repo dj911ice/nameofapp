@@ -17,7 +17,7 @@
 			<p class="description">
 			<%= @product.description %>
 			</p>
-			<p class="price price-show"> Our Price: <%= @product.price %> CHF</p>			
+			<p class="price price-show"> Our Price: <%= (@product.price).to_d %> CHF</p>			
 			<p class="rated" data-score="<%= @product.average_rating %>">Average Rating: </br>
 			</p>
 			<div class= "paybtn-stripe">

@@ -2,5 +2,5 @@
 	<div class="col-md-4">
 	 <h1><%= product.name %></h1>
    <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
-   <span class="price img-responsive"><%= product.price %> CHF</span>
+   <span class="price img-responsive"><%= (product.price).to_d %> CHF</span>
 	</div>
