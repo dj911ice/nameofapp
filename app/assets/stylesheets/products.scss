@@ -11,7 +11,6 @@
 	display: block;	
 	height: auto;
 	max-width: 75%;
-
 }
 
 .price {
@@ -26,4 +25,11 @@
 
 .description {
 	text-align: left;
+}
+
+.paybtn-stripe {
+	text-align: left;
+	margin-left: 30px;
+	padding-left: 2px;
+
 }
