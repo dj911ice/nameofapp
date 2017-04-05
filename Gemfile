@@ -61,3 +61,5 @@ gem 'cancancan'
 gem 'will_paginate', '~> 3.1.1'
 # Rails Controller Testing
 gem 'rails-controller-testing'
+# gem stripe: Payment Processing API
+gem 'stripe'
