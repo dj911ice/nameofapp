@@ -63,3 +63,5 @@ gem 'will_paginate', '~> 3.1.1'
 gem 'rails-controller-testing'
 # gem stripe: Payment Processing API
 gem 'stripe'
+# gem brakeman
+gem 'brakeman', :require => false

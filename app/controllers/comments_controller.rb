@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show, :index]
   load_and_authorize_resource
-	byebug
+	# byebug
 	def create
 		@product = Product.find(params[:product_id])
 		@comment = @product.comments.new(comment_params)
