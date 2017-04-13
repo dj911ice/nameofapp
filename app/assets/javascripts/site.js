@@ -5,5 +5,6 @@ $(document).on('turbolinks:load', function(){
 		score: function(){
 			return $(this).attr('data-score');
 		}
-	});
+	}); //Raty Plugin
+	$('.img-zoom').elevateZoom(); //Elevate Zoom Plugin
 });

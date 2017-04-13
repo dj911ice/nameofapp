@@ -10,7 +10,7 @@
 				<%= link_to 'Back', products_path %>
 			<% else %>
 			<% end %>
-			<%= image_tag(@product.image_url, class: "img-show") %>
+			<%= image_tag(@product.image_url, class: "img-show img-zoom data_zoom_image:'@product.image_url'") %>
 			<p><%= render partial: 'products/new_comment' %></p>
 			</div>
 		</div>
