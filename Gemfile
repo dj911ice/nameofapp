@@ -65,3 +65,7 @@ gem 'rails-controller-testing'
 gem 'stripe'
 # gem brakeman
 gem 'brakeman', :require => false
+# gem dalli: caching on heroku and rails
+gem 'dalli'
+# gem connection_pool: supports multi-threading for dalli gem
+gem 'connection_pool'
