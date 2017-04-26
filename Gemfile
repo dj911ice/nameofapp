@@ -22,7 +22,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -69,3 +69,7 @@ gem 'brakeman', :require => false
 gem 'dalli'
 # gem connection_pool: supports multi-threading for dalli gem
 gem 'connection_pool'
+# gem redis-rails: redis
+gem 'redis-rails'
+#gem newrelic_rpm: new relic
+gem 'newrelic_rpm'

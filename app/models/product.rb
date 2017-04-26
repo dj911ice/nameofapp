@@ -15,5 +15,11 @@ class Product < ApplicationRecord
 	def average_rating
 		comments.average(:rating).to_f
 	end
+	def views
+		$redis.get("product:#{id}") # get product id
+	end
+	def viewed!
+		$redis.incr("product:#{id}") # Increment product id
+	end
 	
 end
