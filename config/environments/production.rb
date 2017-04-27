@@ -96,4 +96,8 @@ Rails.application.configure do
       :down_retry_delay => 60,
       :pool_size => 5
     }
+  #Configure Action Cable for Heroku
+  config.web_socket_server_url = "wss://mytestappjpd.heroku.com/cable"
+  config.action_cable.allowed_request_origins = ['https://mytestappjpd.heroku.com','http://mytestappjpd.heroku.com']
+
 end

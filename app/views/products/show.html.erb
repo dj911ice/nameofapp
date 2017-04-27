@@ -48,7 +48,10 @@
 				<#%= will_paginate @comments %>
 			</div> -->
 		</div>
-	</div>	
+	</div>
+	<div class="alert alert-info" style="display:none" role="alert">
+		A new comment was posted!
+	</div>
 	<div class='product-reviews'><%= render partial: 'products/comments' %></div>
 	<div><% @product.highest_rating_comment %></div>			
 </div>
