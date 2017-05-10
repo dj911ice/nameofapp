@@ -19,11 +19,13 @@ body {
 	background-color: olive;
 }
 
-h1 {
+h1, 
+h4 {
 	font: $font-headers;
 	color: $primary-color;
 	text-align: center;
 }
+
 
 .projectName {
 	text-transform: uppercase;
