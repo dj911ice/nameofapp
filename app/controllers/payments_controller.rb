@@ -18,7 +18,7 @@ class PaymentsController < ApplicationController
 				Order.create(
 					:product_id => @product.id,
 				 	:user_id => @user.id,
-				 	:total => @total.to_i
+				 	:total => @product.price
 				 	)
 			end
 		rescue Stripe::CardError => e

@@ -1,7 +1,8 @@
 <% cache product do %>
-	<div class="col-md-4">
+	<div class="col-md-6">
 		 <h1><%= product.name %></h1>
 	   <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
+	   <br>
 	   <span class="price img-responsive"><%= (product.price).to_d %> CHF</span>
 	</div>
 <% end %>
