@@ -1,7 +1,6 @@
-<p id="notice"><%= notice %></p>
 
 <h1 class="users">Users</h1>
-
+<% if signed_in? && current_user %>
 <table>
   <thead>
     <tr>
@@ -10,8 +9,9 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+  
   <tbody>
+  
     <% @users.each do |user| %>
       <tr>
         <td><%= user.first_name %></td>
@@ -22,8 +22,14 @@
       </tr>
     <% end %>
   </tbody>
+  
 </table>
 
 <br>
-
-<%= link_to 'New User', new_user_path %>
+  <% if current_user.admin? %>
+    <%= link_to 'New User', new_user_path %>
+  <% else %>
+  <% end %>
+<% else %>
+  <div id="notice"><% %></div>
+<% end %>

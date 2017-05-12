@@ -1,9 +1,6 @@
-<!-- <h1>StaticPages#index</h1> -->
-<!-- <p>Find me in app/views/static_pages/index.html.erb</p> -->
-
 <h1 class="welcome">Welcome to Social Dance Products!</h1>
-<p class="tag-line"> Where the best dance products are for social dancing at the prices one can enjoy! <br><br> Today is <%= Time.now %></p>
+<p class="tag-line"> Where the best dance products are for social dancing at the prices one can enjoy! </p>
 <!-- <h2 class="test-header"></h2> -->
+<h2 class="showcase"><%= link_to('View Our Showcase', static_pages_landing_page_path, id: "showcase")%></h2>
+<br>
 <%= image_tag("879DT_Satin.jpg", class: "img-responsive") %>
-
-<%#= params[:example_key].to_i * 10 %>

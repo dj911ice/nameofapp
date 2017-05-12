@@ -1,5 +1,4 @@
-<!-- <h2 class="products"><#%= link_to('View Our Products', products_path, id: "products")%></h2> -->
-<h1 class="featured">Featured Products</h1>
+<h1 class="featured">Product Showcase</h1>
 <br><br>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   
@@ -19,7 +18,7 @@
       <%= product.name %>
       <br>
       Starting at:
-      <%= number_to_currency(product.price) %>
+      <%= number_to_currency(product.price, unit: "CHF ", separator: ",") %>
       <div class="carousel-caption">
       </div>
     </div>

@@ -3,6 +3,6 @@
 		 <h4><%= product.name %></h4>
 	   <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
 	   <br>
-	   <span class="price img-responsive"><%= number_to_currency(product.price) %></span>
+	   <span class="price img-responsive"><%= number_to_currency(product.price, unit: "CHF ", separator: ",") %></span>
 	</div>
 <% end %>
