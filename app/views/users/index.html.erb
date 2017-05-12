@@ -1,35 +1,30 @@
 
 <h1 class="users">Users</h1>
-<% if signed_in? && current_user %>
 <table>
   <thead>
     <tr>
-      <th>First name</th>
-      <th>Last name</th>
-      <th colspan="3"></th>
+      <th class="col-md-4">First Name</th>
+      <th class="col-md-4">Last Name</th>
+      <th class="col-md-4">Email Address</th>
+      <th class="">Action</th>
     </tr>
   </thead>
   
-  <tbody>
-  
+  <tbody>  
     <% @users.each do |user| %>
       <tr>
         <td><%= user.first_name %></td>
         <td><%= user.last_name %></td>
+        <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
-  
+  </tbody>  
 </table>
-
 <br>
-  <% if current_user.admin? %>
-    <%= link_to 'New User', new_user_path %>
-  <% else %>
-  <% end %>
+<% if current_user.admin? %>
+  <%= link_to 'New User', new_user_path %>
 <% else %>
-  <div id="notice"><% %></div>
 <% end %>
