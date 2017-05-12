@@ -13,27 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+$font-headers: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+$primary-color: black;
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	padding-bottom: 70px;
+}
+
+body {
+	background-color: olive;
+}
+
+h1, 
+h4 {
+	font: $font-headers;
+	color: $primary-color;
+	text-align: center;
+}
+
+.projectName {
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+}
+
+.site {
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
 .navbar {
-	min-height: 30px;
-	padding-bottom: 2px;
+	min-height: 20px;
 }
 
 .nav li {
-	font-size: 14px;
-	line-height: 8px;
+	font-size: 0.90em;
 	text-transform: uppercase;
 	color: white;
 }
 
 .search {
+	padding-top: 4px;
 }
 
 .search_label {
-	line-height: 7px;
 	text-transform: uppercase;
 	color: olive;
 	display: inline-block;
-	font-size: 1.1em;
+	font-size: 1.0em;
 }
 
 .actions {

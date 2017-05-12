@@ -2,47 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$font-headers: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-
-$primary-color: black;
-* {
-	margin: 0;
-}
-
-html,
-body {
-	height: 100%;
-	padding-bottom: 70px;
-}
-
-body {
-	background-color: olive;
-}
-
-h1, 
-h4 {
-	font: $font-headers;
-	color: $primary-color;
-	text-align: center;
-}
-
-
-.projectName {
-	text-transform: uppercase;
-	color: white;
-	text-decoration: none;
-}
-
-.Site {
-	display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.Site-content {
-  flex: 1;
-}
-
 .tag-line {
 	text-align: center;
 	font-size: 1.25em;
