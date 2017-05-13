@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Ruby version
-ruby '2.3.3'
+ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2', '>= 5.0.1'
+gem 'rails', '~> 5.0.3', '>= 5.0.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -54,9 +54,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem Devise: User Authentication
-gem 'devise'
+gem 'devise', '~> 4.0'
 # gem CanCanCan: User Authentication
-gem 'cancancan'
+gem 'cancancan', '~>1.16'
 # gem will_paginate 3.1.1: Pagination
 gem 'will_paginate', '~> 3.1.1'
 # Rails Controller Testing
