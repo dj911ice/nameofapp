@@ -10,6 +10,5 @@ var refreshRating = function(){
 
 $(document).on('turbolinks:load ajaxSuccess', function(){
 	refreshRating(); // Raty Plugin Call
-	
 	$('.img-zoom').elevateZoom(); //Elevate Zoom Plugin
 });

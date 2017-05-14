@@ -38,11 +38,11 @@ h4 {
 	text-align: center;
 }
 
-.projectName {
+/*.projectName {
 	text-transform: uppercase;
 	color: white;
 	text-decoration: none;
-}
+}*/
 
 .site {
 	display: flex;
@@ -55,7 +55,7 @@ h4 {
 }
 
 .navbar {
-	min-height: 20px;
+	min-height: 10px;
 }
 
 .nav li {
@@ -65,14 +65,14 @@ h4 {
 }
 
 .search {
-	padding-top: 4px;
+	padding: 4px;	
 }
 
 .search_label {
 	text-transform: uppercase;
 	color: olive;
 	display: inline-block;
-	font-size: 1.0em;
+	font-size: 0.90em;
 }
 
 .actions {
