@@ -3,21 +3,21 @@
 <table>
   <thead>
     <tr>
-      <th class="col-md-4">First Name</th>
-      <th class="col-md-4">Last Name</th>
-      <th class="col-md-4">Email Address</th>
-      <th class="col-md-4">Admin</th> 
-      <th class="">Action</th>
+      <th class="col-md-3 user">First Name</th>
+      <th class="col-md-3 user">Last Name</th>
+      <th class="col-md-3 user">Email Address</th>
+      <th class="col-md-3 user">Admin</th> 
+      <th class="user">Action</th>
     </tr>
   </thead>
   
   <tbody>  
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.first_name %></td>
-        <td><%= user.last_name %></td>
-        <td><%= user.email %></td>
-        <td><%= user.admin %></td>
+        <td class="user"><%= user.first_name %></td>
+        <td class="user"><%= user.last_name %></td>
+        <td class="user"><%= user.email %></td>
+        <td class="user"><%= user.admin %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
