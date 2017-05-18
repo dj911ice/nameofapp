@@ -4,15 +4,9 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    # byebug
     if params[:q]
       search_term = params[:q]
-      if Rails.env == "development"
-        @products = Product.where("name LIKE ?", "%#{search_term}%")
-      else
-        @products = Product.where("name ilike ?", "%#{search_term}%")
-      end  
-
+      @products = Product.search(search_term)
     #return our filtered list here
     else
       @products = Product.all
@@ -51,7 +45,7 @@ class ProductsController < ApplicationController
       end
     end
   end
-  
+
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update

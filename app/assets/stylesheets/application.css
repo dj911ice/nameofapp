@@ -31,7 +31,7 @@ body {
 	background-color: olive;
 }
 
-h1, 
+h1,
 h4 {
 	font: $font-headers;
 	color: $primary-color;
@@ -65,7 +65,8 @@ h4 {
 }
 
 .search {
-	padding: 4px;	
+	padding: 0.5px;
+	text-align: center;
 }
 
 .search_label {

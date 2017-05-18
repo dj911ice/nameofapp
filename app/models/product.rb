@@ -6,8 +6,16 @@ class Product < ApplicationRecord
 	# validates :image_url, presence: true
 	# validates :colour, presence: true
 	# validates :price, presence: true
+	def self.search(search_term)
+		if Rails.env == "development"
+			@products = Product.where("name LIKE ?", "%#{search_term}%")
+		else
+			@products = Product.where("name ilike ?", "%#{search_term}%")
+		end
+	end
+
 	def highest_rating_comment
-		comments.rating_desc.first		
+		comments.rating_desc.first
 	end
 	def lowest_rating_comment
 		comments.rating_desc.last
@@ -19,7 +27,6 @@ class Product < ApplicationRecord
 		$redis.get("product:#{id}") # get product id
 	end
 	def viewed!
-		$redis.incr("product:#{id}") # Increment product id
+		$redis.incr("product:#{id}") # increment product id
 	end
-	
 end
