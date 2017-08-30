@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Ruby version
 ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.3', '>= 5.0.1'
+gem 'rails', '~> 5.1.3', '>= 5.0.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -33,7 +33,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
+	# gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails', '~> 4.0'
 end
@@ -49,7 +49,6 @@ end
 
 group :production do
   # postgres for production
-	gem 'pg', '~> 0.20.0'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -74,3 +73,5 @@ gem 'connection_pool'
 gem 'redis-rails'
 #gem newrelic_rpm: new relic
 gem 'newrelic_rpm'
+# Postgres SQL
+gem 'pg'
