@@ -23,7 +23,7 @@ Things you may want to cover:
 
 * ... -->
 
-Hallo! I am Justin P. Dickerson (GitHub: dj911ice) a software enginee.
+Hallo! I am Justin P. Dickerson (GitHub: dj911ice) a software engineer.
 
 The name of this app is called nameofapp (a bit of joke one must say...) locally and mytestappjpd on Heroku 
 (https://mytestappjpd.herokuapp.com), and is my first application! Purpose of this application is to showcase 
