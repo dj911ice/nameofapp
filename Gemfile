@@ -1,28 +1,29 @@
 source 'https://rubygems.org'
 
 # Ruby version
-ruby '2.4.1'
+ruby '3.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.3', '>= 5.0.1'
+#gem 'rails', '~> 6.1', '>= 6.1.4.6'
+gem 'rails', '~> 7.0', '>= 7.0.2.2'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 5.6', '>= 5.6.2'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 4.2'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.4'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.11', '>= 2.11.5'
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 3.0'
+gem 'redis', '~> 4.6'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -31,20 +32,20 @@ gem 'redis', '~> 3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  #gem 'byebug', platform: :mri
+  gem 'byebug', '~> 11.1', '>= 11.1.3'
   # Use sqlite3 as the database for Active Record
 	# gem 'sqlite3'
-  gem 'rspec-rails', '~> 3.5'
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_bot_rails', '~> 6.2'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+  gem 'web-console', '~> 4.2'
+  gem 'listen', '~> 3.7', '>= 3.7.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
 
 group :production do
@@ -54,24 +55,24 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem Devise: User Authentication
-gem 'devise', '~> 4.0'
+gem 'devise', '~> 4.8', '>= 4.8.1'
 # gem CanCanCan: User Authentication
-gem 'cancancan', '~>1.16'
+gem 'cancancan', '~> 3.3'
 # gem will_paginate 3.1.1: Pagination
-gem 'will_paginate', '~> 3.1.1'
+gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 # Rails Controller Testing
-gem 'rails-controller-testing'
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 # gem stripe: Payment Processing API
-gem 'stripe'
+gem 'stripe', '~> 5.44'
 # gem brakeman
 gem 'brakeman', :require => false
 # gem dalli: caching on heroku and rails
-gem 'dalli'
+gem 'dalli', '~> 3.2', '>= 3.2.1'
 # gem connection_pool: supports multi-threading for dalli gem
-gem 'connection_pool'
+gem 'connection_pool', '~> 2.2', '>= 2.2.5'
 # gem redis-rails: redis
-gem 'redis-rails'
+gem 'redis-rails', '~> 5.0', '>= 5.0.2'
 #gem newrelic_rpm: new relic
-gem 'newrelic_rpm'
+gem 'newrelic_rpm', '~> 8.4'
 # Postgres SQL
-gem 'pg'
+gem 'pg', '~> 1.3', '>= 1.3.2'
